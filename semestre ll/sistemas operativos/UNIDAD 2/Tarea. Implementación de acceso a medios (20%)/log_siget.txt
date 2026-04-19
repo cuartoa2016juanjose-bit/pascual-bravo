@@ -1,0 +1,2 @@
+Registro de eventos SIGET - Fecha: 2026-04-06, version: 1.0.0. Este log captura datos cruciales para la optimizacion del trafico.
+Alerta: Verifique el estado del servidor de optimizacion de rutas. Contacto: soporte@siget.com

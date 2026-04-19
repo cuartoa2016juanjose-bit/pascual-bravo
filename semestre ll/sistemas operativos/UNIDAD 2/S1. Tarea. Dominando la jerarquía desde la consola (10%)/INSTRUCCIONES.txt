@@ -1,0 +1,39 @@
+INSTRUCCIONES
+ 
+Abre CMD en Windows
+ 
+REM Crear carpeta principal SIGET (preferiblemente en una carpeta personalizada)
+mkdir SIGET
+cd SIGET
+ 
+REM Módulo 1: RECOLECCIÓN DE DATOS
+mkdir Modulo_Recoleccion_Datos
+cd Modulo_Recoleccion_Datos
+mkdir Sensores
+mkdir Camaras
+cd Sensores
+echo sensor01 > sensor01.txt
+cd ..\..
+ 
+REM Módulo 2: ANÁLISIS Y CONTROL
+mkdir Modulo_Analisis_Control
+cd Modulo_Analisis_Control
+mkdir Algoritmos
+mkdir Configuraciones
+cd Algoritmos
+echo # archivo de control > algoritmo_control.py
+cd ..\..
+ 
+REM Módulo 3: REPORTES
+mkdir Modulo_Reportes
+cd Modulo_Reportes
+mkdir Diarios
+mkdir Mensuales
+cd ..\..
+ 
+REM Carpetas adicionales
+mkdir Logs_Sistema
+mkdir Backups
+ 
+REM Ver la estructura creada
+tree

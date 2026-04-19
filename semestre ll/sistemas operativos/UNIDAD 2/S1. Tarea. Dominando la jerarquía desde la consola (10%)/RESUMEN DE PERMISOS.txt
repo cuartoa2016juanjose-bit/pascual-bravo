@@ -1,0 +1,11 @@
+RESUMEN DE PERMISOS RECOMENDADOS PARA SIGET
+ 
+CARPETA/ARCHIVO              WINDOWS          LINUX        RAZÓN
+Modulo_Recoleccion_Datos    (M) Modify       755          Lecturas frecuentes
+Modulo_Analisis_Control     (M) Modify       755          Procesamiento
+Modulo_Reportes             (M) Modify       755          Genera reportes
+Logs_Sistema                (R) Read-only    700          Seguridad/Auditoría
+Backups                     (R) Read-only    700          Protección datos
+sensor01.txt                (R) Read-only    644          Datos históricos
+algoritmo_control.py        (M) Modify       755          Actualizaciones
+configuraciones             (R) Read-only    700          Estabilidad

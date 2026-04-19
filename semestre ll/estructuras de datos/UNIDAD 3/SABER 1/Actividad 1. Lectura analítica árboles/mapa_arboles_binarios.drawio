@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="draw.io" version="21.0.0" type="device">
+  <diagram name="Mapa Conceptual - Arboles Binarios" id="mapa-arboles">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ======================== RAIZ ======================== -->
+        <mxCell id="raiz" value="&lt;b&gt;Árbol Binario&lt;/b&gt;&lt;br&gt;&lt;font style=&apos;font-size:11px&apos;&gt;Estructura jerárquica donde cada nodo tiene máximo 2 hijos&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#00264d;fontSize=14;arcSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="527" y="30" width="400" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ======================== SECCION 1: CONCEPTO ======================== -->
+        <mxCell id="s1" value="&lt;b&gt;1. Concepto&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#6c9e6c;fontColor=#1a3d1a;fontSize=14;arcSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="577" y="160" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_raiz_s1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="raiz" target="s1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c1" value="&lt;b&gt;Tipos de nodos&lt;/b&gt;&lt;br&gt;Raíz: nodo principal&lt;br&gt;Rama: tiene al menos 1 hijo&lt;br&gt;Hoja: nodo terminal, sin hijos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="290" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_c1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s1" target="c1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2" value="&lt;b&gt;Relaciones&lt;/b&gt;&lt;br&gt;Padre: nodo con hijos&lt;br&gt;Hijo: depende de un padre&lt;br&gt;Hermano: mismo padre" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="617" y="290" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_c2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s1" target="c2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c3" value="&lt;b&gt;Medidas del árbol&lt;/b&gt;&lt;br&gt;Altura: cantidad de niveles&lt;br&gt;Peso: total de nodos&lt;br&gt;Grado: máx. hijos de un nodo&lt;br&gt;Orden: máx. hijos permitidos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="934" y="290" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_c3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s1" target="c3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ======================== SECCION 2: BINARIO COMUN ======================== -->
+        <mxCell id="s2" value="&lt;b&gt;2. Árbol Binario Común&lt;/b&gt;&lt;br&gt;&lt;font style=&apos;font-size:11px&apos;&gt;Disposición libre — máximo 2 hijos por nodo&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#00264d;fontSize=14;arcSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="527" y="460" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_s2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s1" target="s2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t1" value="&lt;b&gt;Completo&lt;/b&gt;&lt;br&gt;Todos los niveles llenos excepto el último. Las hojas van lo más a la izquierda posible." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_t1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s2" target="t1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t2" value="&lt;b&gt;Lleno&lt;/b&gt;&lt;br&gt;Cada nodo tiene exactamente 0 o 2 hijos. Ningún nodo tiene solo 1 hijo." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="610" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_t2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s2" target="t2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t3" value="&lt;b&gt;Degenerado&lt;/b&gt;&lt;br&gt;Máximo 1 hijo por nodo. Se vuelve lineal, similar a una lista enlazada." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="610" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_t3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s2" target="t3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t4" value="&lt;b&gt;Equilibrado&lt;/b&gt;&lt;br&gt;Se rebalancea automáticamente después de cada operación. Mantiene eficiencia." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#aaaaaa;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="610" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_t4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s2" target="t4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ======================== SECCION 3: ABB ======================== -->
+        <mxCell id="s3" value="&lt;b&gt;3. Árbol Binario de Búsqueda (ABB)&lt;/b&gt;&lt;br&gt;&lt;font style=&apos;font-size:11px&apos;&gt;Orden estricto para búsquedas eficientes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6a030;fontColor=#5a3000;fontSize=14;arcSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="527" y="790" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_s3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s2" target="s3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a1" value="&lt;b&gt;Regla clave&lt;/b&gt;&lt;br&gt;&lt;b style=&apos;font-size:13px;color:#8a4000&apos;&gt;izq &amp;lt; nodo &amp;lt; der&lt;/b&gt;&lt;br&gt;Subárbol izquierdo: valores menores&lt;br&gt;Subárbol derecho: valores mayores" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6a030;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="240" y="940" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s3_a1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s3" target="a1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a2" value="&lt;b&gt;Sin duplicados&lt;/b&gt;&lt;br&gt;Cada valor es único en el árbol. La regla se aplica de forma recursiva en todos los nodos." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6a030;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="607" y="940" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s3_a2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s3" target="a2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a3" value="&lt;b&gt;Búsqueda eficiente&lt;/b&gt;&lt;br&gt;Descarta la mitad del árbol en cada paso. Similar a búsqueda binaria en arreglos." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6a030;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="974" y="940" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s3_a3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s3" target="a3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ======================== DIFERENCIA CLAVE ======================== -->
+        <mxCell id="diff" value="&lt;b&gt;⚡ Diferencia principal&lt;/b&gt;&lt;br&gt;&lt;b&gt;Binario común:&lt;/b&gt; los nodos se insertan libremente, sin orden predefinido&lt;br&gt;&lt;b&gt;Árbol de búsqueda (ABB):&lt;/b&gt; orden estricto — siempre se cumple izquierda &amp;lt; nodo &amp;lt; derecha" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffacd;strokeColor=#cccccc;fontColor=#444444;fontSize=12;align=center;dashed=1;dashPattern=8 4;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="377" y="1120" width="700" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s3_diff" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s3" target="diff" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ======================== SECCION 4: APLICACIONES ======================== -->
+        <mxCell id="s4" value="&lt;b&gt;4. Aplicaciones Reales&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#6a0000;fontSize=14;arcSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="577" y="1280" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_diff_s4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="diff" target="s4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ap1" value="&lt;b&gt;Bases de datos&lt;/b&gt;&lt;br&gt;Índices B, B+, AVL&lt;br&gt;MySQL, PostgreSQL, Oracle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1420" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s4_ap1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="ap1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ap2" value="&lt;b&gt;Sistemas de archivos&lt;/b&gt;&lt;br&gt;Carpetas y subcarpetas&lt;br&gt;Windows, Linux, macOS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1420" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s4_ap2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="ap2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ap3" value="&lt;b&gt;Compiladores&lt;/b&gt;&lt;br&gt;Árbol sintáctico (AST)&lt;br&gt;Analiza estructura del código" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1420" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s4_ap3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="ap3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ap4" value="&lt;b&gt;IA y Machine Learning&lt;/b&gt;&lt;br&gt;Árboles de decisión&lt;br&gt;Clasificación y pronósticos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1420" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s4_ap4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="ap4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ap5" value="&lt;b&gt;Motores de búsqueda&lt;/b&gt;&lt;br&gt;Categorías y filtros&lt;br&gt;Tiendas en línea" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1540" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s4_ap5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="ap5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ap6" value="&lt;b&gt;Interfaces GUI&lt;/b&gt;&lt;br&gt;DOM en HTML&lt;br&gt;Menús, paneles de navegación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontColor=#333333;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1540" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s4_ap6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="s4" target="ap6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

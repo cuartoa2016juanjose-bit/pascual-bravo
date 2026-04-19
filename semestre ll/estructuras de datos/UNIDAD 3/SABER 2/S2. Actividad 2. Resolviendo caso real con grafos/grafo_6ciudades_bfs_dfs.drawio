@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- TITLE -->
+    <mxCell id="title" value="Grafo Ponderado — 6 Ciudades | BFS vs DFS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+      <mxGeometry x="200" y="20" width="769" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="Origen: Bogotá | Peso = Tiempo en horas" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=12;fontColor=#555555;fontStyle=2;" vertex="1" parent="1">
+      <mxGeometry x="200" y="54" width="769" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- NODES -->
+    <!-- N1: Bogotá (origen) -->
+    <mxCell id="n1" value="&lt;b&gt;🏙️ Bogotá&lt;/b&gt;&lt;br&gt;(Origen)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#1e88e5;strokeWidth=3;fontSize=13;fontColor=#1a1a2e;align=center;" vertex="1" parent="1">
+      <mxGeometry x="490" y="100" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- N2: Medellín -->
+    <mxCell id="n2" value="&lt;b&gt;🏙️ Medellín&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#388e3c;strokeWidth=2.5;fontSize=13;fontColor=#1a1a2e;align=center;" vertex="1" parent="1">
+      <mxGeometry x="200" y="240" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- N3: Cali -->
+    <mxCell id="n3" value="&lt;b&gt;🏙️ Cali&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#388e3c;strokeWidth=2.5;fontSize=13;fontColor=#1a1a2e;align=center;" vertex="1" parent="1">
+      <mxGeometry x="780" y="240" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- N4: Bucaramanga -->
+    <mxCell id="n4" value="&lt;b&gt;🏙️ Bucaramanga&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#f9a825;strokeWidth=2.5;fontSize=13;fontColor=#1a1a2e;align=center;" vertex="1" parent="1">
+      <mxGeometry x="200" y="430" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- N5: Barranquilla -->
+    <mxCell id="n5" value="&lt;b&gt;🏙️ Barranquilla&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#f9a825;strokeWidth=2.5;fontSize=13;fontColor=#1a1a2e;align=center;" vertex="1" parent="1">
+      <mxGeometry x="490" y="430" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- N6: Cartagena -->
+    <mxCell id="n6" value="&lt;b&gt;🏙️ Cartagena&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#c62828;strokeWidth=2.5;fontSize=13;fontColor=#1a1a2e;align=center;" vertex="1" parent="1">
+      <mxGeometry x="780" y="430" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- EDGES (undirected / bidirectional) -->
+
+    <!-- Bogotá — Medellín: 8h -->
+    <mxCell id="e1" value="8h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1e88e5;strokeWidth=2.5;fontStyle=1;fontSize=12;fontColor=#1e88e5;endArrow=none;" edge="1" source="n1" target="n2" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Bogotá — Cali: 10h -->
+    <mxCell id="e2" value="10h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1e88e5;strokeWidth=2.5;fontStyle=1;fontSize=12;fontColor=#1e88e5;endArrow=none;" edge="1" source="n1" target="n3" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Bogotá — Bucaramanga: 6h -->
+    <mxCell id="e3" value="6h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1e88e5;strokeWidth=2.5;fontStyle=1;fontSize=12;fontColor=#1e88e5;endArrow=none;" edge="1" source="n1" target="n4" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Medellín — Barranquilla: 12h -->
+    <mxCell id="e4" value="12h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#388e3c;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#388e3c;endArrow=none;" edge="1" source="n2" target="n5" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Medellín — Bucaramanga: 9h -->
+    <mxCell id="e5" value="9h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#388e3c;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#388e3c;endArrow=none;" edge="1" source="n2" target="n4" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Cali — Cartagena: 14h -->
+    <mxCell id="e6" value="14h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#388e3c;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#388e3c;endArrow=none;" edge="1" source="n3" target="n6" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Bucaramanga — Barranquilla: 7h -->
+    <mxCell id="e7" value="7h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#f9a825;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#f57f17;endArrow=none;" edge="1" source="n4" target="n5" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Barranquilla — Cartagena: 3h -->
+    <mxCell id="e8" value="3h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#f9a825;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#f57f17;endArrow=none;" edge="1" source="n5" target="n6" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Cali — Barranquilla: 16h -->
+    <mxCell id="e9" value="16h" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7b1fa2;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#7b1fa2;dashed=1;endArrow=none;" edge="1" source="n3" target="n5" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== BFS TABLE ======================== -->
+    <mxCell id="bfs_title" value="🔵 Recorrido BFS (Cola) — desde Bogotá" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;fontSize=13;fontStyle=1;fontColor=#1e88e5;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="30" y="570" width="320" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="bfs_table" value="
+Paso | Visitado   | Cola
+-----|------------|----------------------------
+ 1   | Bogotá     | [Medellín, Cali, Bucaramanga]
+ 2   | Medellín   | [Cali, Bucaramanga, Barranquilla]
+ 3   | Cali       | [Bucaramanga, Barranquilla, Cartagena]
+ 4   | Bucaramanga| [Barranquilla, Cartagena]
+ 5   | Barranquilla| [Cartagena]
+ 6   | Cartagena  | []
+
+Resultado: Bogotá → Medellín → Cali →
+           Bucaramanga → Barranquilla → Cartagena" style="text;html=0;strokeColor=#1e88e5;fillColor=#f5f9ff;align=left;fontSize=11;fontFamily=Courier New;rounded=1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="30" y="604" width="320" height="190" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== DFS TABLE ======================== -->
+    <mxCell id="dfs_title" value="🟠 Recorrido DFS (Pila) — desde Bogotá" style="text;html=1;strokeColor=none;fillColor=#fff2cc;align=center;fontSize=13;fontStyle=1;fontColor=#e65100;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="400" y="570" width="320" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="dfs_table" value="
+Paso | Visitado    | Pila
+-----|-------------|----------------------------
+ 1   | Bogotá      | [Medellín, Cali, Bucaramanga]
+ 2   | Bucaramanga | [Medellín, Cali, Barranquilla]
+ 3   | Barranquilla| [Medellín, Cali, Cartagena]
+ 4   | Cartagena   | [Medellín, Cali]
+ 5   | Cali        | [Medellín]
+ 6   | Medellín    | []
+
+Resultado: Bogotá → Bucaramanga → Barranquilla
+           → Cartagena → Cali → Medellín" style="text;html=0;strokeColor=#f9a825;fillColor=#fffde7;align=left;fontSize=11;fontFamily=Courier New;rounded=1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="400" y="604" width="320" height="190" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== COMPARISON ======================== -->
+    <mxCell id="cmp_title" value="📊 BFS vs DFS — Comparación" style="text;html=1;strokeColor=none;fillColor=#f8cecc;align=center;fontSize=13;fontStyle=1;fontColor=#c62828;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="770" y="570" width="280" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="cmp_table" value="BFS (Cola)         DFS (Pila)
+-------------------+-------------------
+Nivel por nivel    | Profundidad primero
+Encuentra ruta     | Explora caminos
+más corta (saltos) | completos antes de
+                   | retroceder
+Usa COLA (FIFO)    | Usa PILA (LIFO)
+Orden predecible   | Orden varía según
+                   | adyacencia
+Ideal: redes,      | Ideal: laberintos,
+rutas más cortas   | detección ciclos" style="text;html=0;strokeColor=#c62828;fillColor=#fff5f5;align=left;fontSize=11;fontFamily=Courier New;rounded=1;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="770" y="604" width="280" height="190" as="geometry" />
+    </mxCell>
+
+    <!-- LEGEND -->
+    <mxCell id="leg_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="30" y="100" width="155" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_t" value="&lt;b&gt;Leyenda&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="75" y="106" width="80" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="leg1" value="Ciudad Origen" style="ellipse;fillColor=#dae8fc;strokeColor=#1e88e5;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="40" y="130" width="120" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="leg2" value="Ciudad Nivel 1" style="ellipse;fillColor=#d5e8d4;strokeColor=#388e3c;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="40" y="164" width="120" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="leg3" value="Ciudad Nivel 2" style="ellipse;fillColor=#fff2cc;strokeColor=#f9a825;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="40" y="198" width="120" height="28" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
