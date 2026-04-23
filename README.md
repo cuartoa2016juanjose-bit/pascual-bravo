@@ -4,7 +4,7 @@
 
 ---
 
-## 📑 Tabla de Contenidos
+##  Tabla de Contenidos
 1. [ Gestión de Bases de Datos](#-gestión-de-bases-de-datos)
 2. [ Estructuras de Datos Avanzadas](#-estructuras-de-datos-avanzadas)
 3. [ Matemáticas Discretas](#-matemáticas-discretas)
