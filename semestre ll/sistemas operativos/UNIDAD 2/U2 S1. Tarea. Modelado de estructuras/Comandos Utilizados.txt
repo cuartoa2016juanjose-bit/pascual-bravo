@@ -1,0 +1,7 @@
+Comandos Utilizados
+
+mkdir siget-app
+mkdir siget-app/src/core
+mkdir siget-app/src/config
+mkdir siget-app/data/logs
+mkdir siget-app/docs/manuales
