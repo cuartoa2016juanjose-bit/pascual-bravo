@@ -1,0 +1,2 @@
+ NOMBRE USUARIO        NOMBRE SESIàN      ID. ESTADO  TIEMPO IN. TIEMPO SESIàN
+>cuart                 console            12  Activo       8:57  25/05/2026 6:43ÿa.ÿm.
